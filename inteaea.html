@@ -1,6 +1,5 @@
 {set:version|0.1}
-{set:codename|Pepper}
-*Inteaea v{get:version} Loaded | Codename: {get:codename} *
+{set:codename|Pepper} *Inteaea v{get:version} Loaded | Codename: {get:codename} *
 
 **Inteaea is built with Python, and NotSoBot
 and has a nice background, sip some tea!**
@@ -44,7 +43,7 @@ else:
 {python:
 latest_ver = {eval:{text:https://raw.githubusercontent.com/auroraaawhattt/inteaeaversion/refs/heads/main/latestver.txt }}
 if {get:version} != latest_ver:
-        print("**Not current version; new version is**", latest_ver)
+        print("**Not current version; new version is**", latest_ver, "**instructions on how to get the latest ver, right [here.](<https://github.com/auroraaawhattt/inteaeaversion/blob/main/Inteaea.md>)**")
 else:
         print("**Version; current**")
 }
