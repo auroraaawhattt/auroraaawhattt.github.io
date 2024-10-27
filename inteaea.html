@@ -1,9 +1,0 @@
-<div id="textFileContent"></div>
-
-<script>
-fetch('https://raw.githubusercontent.com/auroraaawhattt/inteaeaversion/refs/heads/main/source.txt')
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('textFileContent').innerText = data;
-    })
-    .catch(error => console.error('Error fetching the file:', error));
